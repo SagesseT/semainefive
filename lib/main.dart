@@ -163,42 +163,9 @@ class DetailPage extends StatelessWidget {
               style: TextStyle(fontSize: 18),
             ),
             SizedBox(height: 20),
-            AiP(),
           ],
         ),
       ),
     );
-  }
-}
-
-class AiP extends StatelessWidget {
-  const AiP({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return 
-    Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Text('Powered by '),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-              Icon(
-          Icons.school_rounded,
-          color: Colors.blue,
-        ),
-        Icon(
-          Icons.code,
-          color: Colors.blue,
-        ),
-        ElevatedButton(onPressed: () {  },
-        child: Text('AI Programming')),
-          ]
-        ),
-        
-      ],
-    );
-
   }
 }
